@@ -1,6 +1,8 @@
 # Анализатор страниц (Java)
 
 [![hexlet-check](https://github.com/AlenaMende/java-project-72/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/AlenaMende/java-project-72/actions)
+[![Java CI](https://github.com/AlenaMende/java-project-72/actions/workflows/main.yml/badge.svg)](https://github.com/AlenaMende/java-project-72/actions/workflows/main.yml)
+
 
 Создадите полноценное веб-приложение, которое выполняет запросы по сети и сохраняет данные в базу данных. Настроите CI и выполните деплой.
 

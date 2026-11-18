@@ -1,5 +1,6 @@
 plugins {
     id("java")
+    id("org.sonarqube") version "7.6.0.18749"
 }
 
 group = "hexlet.code"
@@ -17,4 +18,11 @@ dependencies {
 
 tasks.test {
     useJUnitPlatform()
+}
+
+sonar {
+    properties {
+        property("sonar.projectKey", "AlenaMende_java-project-72")
+        property("sonar.organization", "alenamende")
+    }
 }
