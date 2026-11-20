@@ -18,6 +18,9 @@ dependencies {
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
     implementation("io.javalin:javalin:7.2.2")
     implementation("org.slf4j:slf4j-simple:2.0.17")
+    implementation("com.zaxxer:HikariCP:7.0.2")
+    runtimeOnly("com.h2database:h2:2.3.232")
+    runtimeOnly("org.postgresql:postgresql:42.7.4")
 }
 
 application {
