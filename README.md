@@ -4,6 +4,12 @@
 [![Java CI](https://github.com/AlenaMende/java-project-72/actions/workflows/main.yml/badge.svg)](https://github.com/AlenaMende/java-project-72/actions/workflows/main.yml)
 
 
+## Render
+```bash
+Available at your primary URL https://java-project-72-gfmk.onrender.com
+```
+
+
 Создадите полноценное веб-приложение, которое выполняет запросы по сети и сохраняет данные в базу данных. Настроите CI и выполните деплой.
 
 Учебный проект Хекслета: https://ru.hexlet.io/programs/java
