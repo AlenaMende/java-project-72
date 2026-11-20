@@ -1,6 +1,8 @@
 plugins {
     id("java")
+    application
     id("org.sonarqube") version "7.6.0.18749"
+    id("com.gradleup.shadow") version "8.3.9"
 }
 
 group = "hexlet.code"
@@ -14,10 +16,20 @@ dependencies {
     testImplementation(platform("org.junit:junit-bom:5.10.0"))
     testImplementation("org.junit.jupiter:junit-jupiter")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+    implementation("io.javalin:javalin:7.2.2")
+    implementation("org.slf4j:slf4j-simple:2.0.17")
+}
+
+application {
+    mainClass.set("hexlet.code.App")
 }
 
 tasks.test {
     useJUnitPlatform()
+}
+
+tasks.shadowJar {
+    mergeServiceFiles()
 }
 
 sonar {

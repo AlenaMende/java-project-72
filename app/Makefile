@@ -1,8 +1,5 @@
-setup:
-	chmod +x ./gradlew
-	./gradlew installDist
+build:
+	./gradlew shadowJar
 
-build: setup
-
-render-start: setup
-	./build/install/app/bin/app
+render-start:
+	java -jar build/libs/app-1.0-SNAPSHOT-all.jar
